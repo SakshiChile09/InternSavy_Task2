@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+  </head>
+  <style>
+    * {
+      background-color: linen;
+      font-family: sans-serif;
+    }
+    a {
+      color: black;
+      float: left;
+      margin-right: 10px;
+    }
+    a:hover {
+      text-decoration: underline 4px black;
+      font-weight: bold;
+    }
+
+    input {
+      background-color: white;
+      width: 70%;
+      margin-left: 12%;
+      font-size: 20px;
+      padding: 16px 16px;
+      border-radius: 10px;
+      border-color: black;
+      margin-bottom: 20px;
+    }
+    textarea {
+      background-color: white;
+      width: 70%;
+      margin-left: 12%;
+      font-size: 20px;
+      padding: 16px 16px;
+      border-radius: 10px;
+      border-color: #060610;
+      margin-bottom: 25px;
+      font-family: sans-serif;
+    }
+
+    input:focus-within {
+      outline: none;
+      border-color: green;
+      border-width: 3px;
+    }
+
+    textarea:focus-within {
+      outline: none;
+      border-color: green;
+      border-width: 3px;
+    }
+    button {
+      background-color: #5bd138;
+      border-radius: 20px;
+      border-color: black;
+      font-size: 22px;
+      padding: 10px 18px;
+      text-align: center;
+      display: flex;
+      margin: auto;
+    }
+    button:hover {
+      opacity: 80%;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <h1>CONTACT FORM</h1>
+
+    <a href="resume.html"> RESUME</a>
+    <a href="index.html"> HOME</a>
+    <br />
+    <hr />
+    <br />
+    <br />
+    <input
+      type="text"
+      name="first"
+      placeholder="First Name"
+      autocomplete="off"
+      required
+    /><br />
+    <input
+      type="text"
+      name="last"
+      placeholder="Last Name"
+      autocomplete="off"
+      required
+    /><br />
+    <input
+      type="date"
+      name="date"
+      placeholder="DOB"
+      autocomplete="off"
+      required
+    />
+    <br />
+    <br />
+    <input
+      type="email"
+      name="email"
+      placeholder="Email Address"
+      autocomplete="off"
+      required
+    /><br />
+    <textarea
+      rows="5"
+      cols="60"
+      name="message"
+      placeholder="Enter text"
+      autocomplete="off"
+      required
+    ></textarea>
+    <br />
+    <button type="submit">Send Message</button>
+  </body>
+</html>
